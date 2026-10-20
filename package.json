@@ -1,0 +1,43 @@
+{
+  "name": "shinian",
+  "productName": "拾念",
+  "version": "1.0.0",
+  "description": "拾念 — 随手收集灵感，从容完成每一件事",
+  "private": true,
+  "type": "module",
+  "main": "dist-electron/main.cjs",
+  "author": "Shinian",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/build-electron.mjs",
+    "build:electron": "node scripts/build-electron.mjs",
+    "start": "electron .",
+    "test": "node --import tsx tests/domain.test.ts && node --import tsx tests/store.test.ts",
+    "test:e2e": "node tests/e2e.mjs",
+    "package:win": "npm run build && node scripts/package.mjs win32",
+    "package:linux": "npm run build && node scripts/package.mjs linux",
+    "package:mac": "npm run build && node scripts/package.mjs darwin",
+    "test:native": "node tests/native-core.mjs",
+    "test:renderer": "node tests/renderer-stress.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.59.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "44.9.0",
+    "esbuild": "0.28.2",
+    "playwright": "1.64.1",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "yazl": "3.3.1"
+  }
+}

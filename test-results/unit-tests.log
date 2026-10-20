@@ -1,0 +1,67 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> shinian@1.0.0 test
+> node --import tsx tests/domain.test.ts && node --import tsx tests/store.test.ts
+
+✔ first run is empty, time is normalized, and independent states do not share settings (5.104981ms)
+✔ commands are deterministic with injected time and return wholly detached immutable results (3.019472ms)
+✔ idea to todo lifecycle keeps completion time stable until reopening (68.342782ms)
+✔ converting to idea reopens by default and honors explicit completion (1.134546ms)
+✔ parent completion and checklist completion are independent and all item fields survive edits (2.258462ms)
+✔ mass moves validate all records atomically and support moving back to the inbox (18.055235ms)
+✔ soft delete and project removal retain active and trash contents, then restore to inbox (2.220444ms)
+✔ permanent purge rejects active or missing records before changing anything (6.745592ms)
+✔ partial item and project reorder preserve the positions of records outside the selection (2.394313ms)
+✔ strict runtime command validation rejects misspellings, invalid values, and unexpected fields (2.746208ms)
+✔ strict state validation rejects unsupported schemas, unknown data, duplicate IDs, and broken references (2.242973ms)
+✔ prototype pollution, inherited objects, and getter payloads are rejected without executing getters (2.001756ms)
+✔ oversized fields fail clearly instead of truncating while large valid notes remain intact (11.691866ms)
+✔ local due dates reject impossible calendar days and timestamp validation rejects inconsistent histories (2.77326ms)
+✔ clock rollback cannot corrupt timestamp ordering and revisions remain serial-friendly (1.803847ms)
+✔ merge preserves both independently edited projects and items and remaps subtasks (4.094092ms)
+✔ reimport after editing an imported conflict copy keeps the edited copy and one original backup copy (2.259946ms)
+✔ reimport after editing a copied project preserves all versions and maps the restored project copy (2.339465ms)
+✔ a backup can recover deleted projects without replacing locally moved records or restoring trash silently (1.481623ms)
+✔ duplicate imports and ordering-only differences do not create records or alter local preferences (1.17395ms)
+✔ merge never deduplicates independently created records merely because they share a title (0.657833ms)
+✔ an imported ID that occupies another record's generated conflict ID cannot overwrite either record (1.495792ms)
+✔ large batch imports retain every record and assign stable append ordering (709.455492ms)
+✔ exhausted item and project numeric ranks compact without changing visible order or losing data (2.035078ms)
+✔ settings updates validate values, normalize accelerators, and keep unrelated data intact (0.973222ms)
+✔ demo workspace is explicit, fictional, reproducible, and refuses to overwrite any existing content (4.806365ms)
+✔ localDate uses local calendar components across both sides of UTC and daylight-saving boundaries (0.896206ms)
+✔ Markdown includes projects, inbox, checklists, completion, tags and trash without raw note HTML (3.463872ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 901.907346
+✔ first run is empty, durable, and detached from caller mutations (49.526666ms)
+✔ concurrent commands serialize without lost updates and notify only committed revisions (1335.393295ms)
+✔ a failed atomic rename preserves acknowledged memory and disk, and the command queue remains usable (84.329751ms)
+✔ a temporary file fsync failure never replaces the primary file or leaves a loaded partial state (20.813294ms)
+✔ a failure updating recovery after the commit reports a warning without falsely rejecting a saved change (28.996594ms)
+✔ corrupted primary recovers latest valid data and preserves the exact corrupt bytes (74.784211ms)
+✔ invalid primary and latest recovery fall back to a validated daily backup (56.902354ms)
+✔ unrecoverable corruption rejects reads and mutations without resetting or overwriting anything (12.676519ms)
+✔ a recovery preservation failure cannot overwrite the damaged primary (33.672784ms)
+✔ failure preserving a damaged recovery copy also blocks later writes with a valid primary (47.493246ms)
+✔ daily automatic snapshots retain the latest 14 calendar days and ignore unrelated files (361.181492ms)
+✔ merge imports and restores create pre-operation backups and maintain a monotonic revision (76.247577ms)
+✔ invalid imports, invalid backup paths and corrupt snapshots cannot mutate current data (24.126135ms)
+✔ restoring a legitimate backup survives a system clock rollback (48.70236ms)
+✔ native confirmation restores its exact validated selection even if the daily backup changes meanwhile (88.889282ms)
+✔ a failed pre-import or pre-restore backup aborts the operation before any primary mutation (39.274355ms)
+✔ exports round-trip full JSON, provide readable Markdown and cannot overwrite managed data (46.556454ms)
+✔ atomic export failure preserves an existing destination (20.257825ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2461.317714

@@ -1,0 +1,28 @@
+Renderer stress test started: 2026-10-19T17:49:02.118Z
+Scope: controlled in-memory bridge delays/faults; NOT native storage or production lifecycle verification.
+Fixture windows are destroyed during cleanup. Screenshots/logs are test artifacts, not release assets.
+Runtime: Node v24.19.0; Electron 44.9.0; Playwright 1.64.1; linux
+Display: :91; isolated fixture build/profile created with mkdtemp.
+PASS 01/15 autosave changes only the edited title
+PASS 02/15 edits during pending save keep the newest title and body
+PASS 03/15 reverting an in-flight value is saved back correctly
+PASS 04/15 remote clean fields merge while dirty title stays local
+PASS 05/15 newer revision wins over delayed response with same timestamp
+PASS 06/15 save failure and failed close retain draft; retry succeeds
+PASS 07/15 close waits for controlled dispatch resolution and guards unload
+PASS 08/15 empty title cannot autosave or close; IME Escape does not close
+PASS 09/15 save and close commits pending tag and subtask inputs
+PASS 10/15 remote delete retains uncommitted subtask and never recreates item
+PASS 11/15 Markdown preview treats HTML as text and styles basic markup
+PASS 12/15 quick failure keeps draft; Escape caches; next window recovers
+PASS 13/15 quick IME shortcut is ignored; repeated submit creates once
+PASS 14/15 quick successful save leaves backup warning visible
+PASS 15/15 quick follows project icons, theme and compact layout
+{
+  "scope": "controlled-renderer-bridge",
+  "checks": 15,
+  "passed": 15,
+  "failures": [],
+  "elapsedMs": 27802
+}
+Renderer stress test finished: 2026-10-19T17:49:30.110Z; exit code 0

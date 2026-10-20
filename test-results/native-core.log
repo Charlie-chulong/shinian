@@ -1,0 +1,10 @@
+PASS empty isolated desktop profile and restricted preload
+PASS main and quick capture serialize and broadcast 24 committed saves
+PASS native window preferences apply and rejected commands cannot mutate data
+PASS IPC rejects foreign renderers; renderer windows and remote navigation are denied
+PASS a second process exits and reuses the existing profile owner and quick window
+PASS native JSON and Markdown export paths execute real atomic writes and cancellation
+PASS native merge import and confirmed restore preserve safety backups; canceled restore is unchanged
+PASS closing quick capture preserves its window and a new application process reloads exact saved state
+PASS fresh native startup recovers known-good state and preserves corrupt bytes
+Native core verification passed: 9 groups.

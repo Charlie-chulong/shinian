@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "platform": "Linux runtime with exact Windows app.asar",
+  "windowsNativeExecution": false,
+  "asarSha256": "863ccb5bd995b1423d5af26aa9a2e3293a43c0d27914f25ddbe04a632fe05f28",
+  "checks": [
+    "production ASAR startup",
+    "packaged CJK rendering",
+    "production renderer isolation and limited bridge",
+    "real packaged main and quick capture persist and synchronize",
+    "platform notices do not masquerade as storage failures",
+    "clean production shutdown and committed files"
+  ],
+  "windowsPeMachine": "0x8664",
+  "asarEntries": 17
+}

@@ -1,0 +1,13 @@
+{
+  "application": "拾念 Shinian",
+  "version": "1.0.0",
+  "target": "Windows x64 portable",
+  "electron": "44.9.0",
+  "windowsNativeExecution": false,
+  "windowsArchiveCrc": "passed",
+  "windowsInternalSha256Files": 75,
+  "windowsEntries": 76,
+  "windowsZipSha256": "c050f67cae63cbc470ce7cc3fd1cc817cc5aa17e008f09b7f61935eb44397550",
+  "windowsZipBytes": 170115869,
+  "testedAsarSha256": "863ccb5bd995b1423d5af26aa9a2e3293a43c0d27914f25ddbe04a632fe05f28"
+}
